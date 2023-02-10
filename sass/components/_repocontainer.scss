@@ -1,0 +1,38 @@
+@use '../helpers/colors' as *;
+
+
+.repo-container {
+  margin: 30px auto;
+  width: 600px;
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 20px;
+  .repo-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 1px 0px 5px 1px #f8f8f8;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    .btns {
+      display: flex;
+      > span {
+        border-radius: 6px;
+        padding: 3px 16px;
+        margin-left: 10px;
+        text-transform: capitalize;
+        color: $white-color;
+        cursor: pointer;
+        &.stars {
+          background-color: #009688;
+          cursor: default;
+        }
+        &.link {
+          background-color: #8bc34a;
+        }
+      }
+    }
+  }
+}

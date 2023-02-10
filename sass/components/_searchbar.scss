@@ -1,0 +1,66 @@
+@use '../helpers/colors' as *;
+
+.search-bar {
+  padding: 40px 10px 10px 20px;
+  text-align: center;
+  line-height: 2;
+  background-image: $gradient;
+  .logo {
+    width: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: $white-color;
+    display: flex;
+    text-transform: uppercase;
+    margin: auto;
+    font-weight: bold;
+    letter-spacing: 3px;
+    span {
+      color: #da00ff;
+    }
+  }
+  .input {
+    background-color: $white-color;
+    border-radius: 15px;
+    width: fit-content;
+    margin: 20px auto -25px;
+    padding: 10px 20px;
+    position: relative;
+    box-shadow: $shadow;
+    input {
+      border: none;
+      padding: 10px {
+        left: 25px;
+      }
+      cursor: pointer;
+      width: 300px;
+      font-size: 15px;
+      &::placeholder {
+        text-transform: capitalize;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    .search {
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      font: {
+        size: 16px;weight: bold;
+      }
+      letter-spacing: 1.5px;
+      border-radius: 10px;
+      color: $white-color;
+      background-image: $gradient;
+    }
+    svg {
+      position: absolute;
+      left: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #8bc34a;
+    }
+  }
+}
+
